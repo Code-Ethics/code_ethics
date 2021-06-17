@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ <title>Code Ethics</title>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> 
+ <link rel="stylesheet" href="assets/css/style.css">
+
+
+  </head>
+  <style>
+  footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  </style>
+  <body>
+    
+    
+   <!--adding navbar-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Code Ethics</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/code_ethics/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/code_ethics/About.html">About</a>
+        </li>
+       
+         
+        <li class="nav-item">
+          <a class="nav-link" href="/code_ethics/404_page.html">Resources</a>
+        </li>
+     
+        <li class="nav-item">
+          <a class="nav-link " href="/code_ethics/Contact.html">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+      <botton class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">login</botton>
+     <botton class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign Up</botton>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Button trigger modal -->
+
+
+
+<!--login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login to The Future</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+   
+      </div>
+    </div>
+  </div>
+</div>
+<!--Sinup Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Sign UpModalLabel">Get An Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+           <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  </div>
+  <button type="submit" class="btn btn-primary">Create Account</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <!--adding slide-->
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/computer-laptop-work-place-camera.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>welcome to the future</h5>
+              <button type="button" class="btn btn-danger">About</button>
+        <button type="button" class="btn btn-success">Resources</button>
+        <button type="button" class="btn btn-primary">Contact us</button>
+    
+      
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://1.bp.blogspot.com/-YZvaUfvcxkA/YMSjk2cmtcI/AAAAAAAADjo/vD-0mRwPbeIC0Iuc92DCPzEO8keIRw6DACLcBGAsYHQ/s2048/b048cf687e6069d768904311806cafcf.jpgv" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-danger">About</button>
+        <button type="button" class="btn btn-success">Resources</button>
+        <button type="button" class="btn btn-primary">Contact us</button>
+    
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://1.bp.blogspot.com/-QICuls-ZL-8/YMSjdRdsBFI/AAAAAAAADjk/K6jjfZgYaVIbFwYXPcpqTkRH3zMPg4YGwCLcBGAsYHQ/s2048/82a6d9dd8eb8ff59c7636c6ea32e8c68.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-danger">About</button>
+        <button type="button" class="btn btn-success">Resources</button>
+        <button type="button" class="btn btn-primary">Contact us</button>
+    
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--endslide-->
+
+ <div class="container my-4">
+  
+    <div class="row mb-2">
+       <div class="col-md-6">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+         <div class="col p-4 d-flex flex-column position-static">
+           <strong class="d-inline-block mb-2 text-success">Resources</strong>
+              <h3 class="mb-0">C Programming</h3>
+           <div class="mb-1 text-muted">July 2020</div>
+      <p class="card-text mb-auto">C is a popular, simple, and flexible general-purpose computer programming language. Dennis M Ritchie develops it in...</p>
+      <a href=/code_ethics/C_Resources.html" class="stretched-link">go to download</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                   <img -link">continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+   <img class="bd-placeholder-img" width="200" height="250" src="https://1.bp.blogspot.com/-xYh2zpPVLUE/YMWYTgoktEI/AAAAAAAADkQ/flVWZlea34sZQfXLViA-pzxOKTu-RpZ5gCLcBGAsYHQ/s1080/IMG_20210613_110042_945%257E2.jpg">
+ 
+                    </div>
+                </div>
+            </div>
+     <div class="container my-4">
+  
+    <div class="row mb-2">
+       <div class="col-md-6">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+         <div class="col p-4 d-flex flex-column position-static">
+           <strong class="d-inline-block mb-2 text-success">Resources</strong>
+              <h3 class="mb-0">HTML5</h3>
+           <div class="mb-1 text-muted">Nov 2020</div>
+      <p class="card-text mb-auto">HTML5 is a markup language used for structuring and presenting content on the World....</p>
+      <a href="/code_ethics/404_page.html" class="stretched-link">go to download</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                   <img -link">continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+   <img class="bd-placeholder-img" width="200" height="250" src="https://source.unsplash.com/1600x900/?html">
+ 
+                    </div>
+                </div>
+            </div>
+     <div class="container my-4">
+  
+    <div class="row mb-2">
+       <div class="col-md-6">
+       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+         <div class="col p-4 d-flex flex-column position-static">
+           <strong class="d-inline-block mb-2 text-success">Resources</strong>
+              <h3 class="mb-0">CSS</h3>
+           <div class="mb-1 text-muted">Nov 2020</div>
+      <p class="card-text mb-auto">CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the presentation (i.e. the layout and formatting) of the web pages....</p>
+      <a href="/_code_ethics/404_page.html" class="stretched-link">go to download</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                   <img -link">continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+   <img class="bd-placeholder-img" width="200" height="250" src="https://source.unsplash.com/1600x900/?css">
+ 
+                    </div>
+                </div>
+            </div>        
+ </div>
+ </div>
+
+ <!--adding footer-->
+   
+ <div class="footer-clean"> 
+   <footer> 
+   <pre>
+   </pre>
+    <div class="container">
+    <p>Copyright© 2020-2021 | All Right Reserved</p>
+     <div class="col-lg-3 item social"> 
+      <a href="#"><i class="icon ion-social-github"></i></a> 
+      <a href="https://twitter.com/Akh4re?s=09"><i class="icon ion-social-twitter"></i></a> 
+      <a href="#"><i class="icon ion-social-whatsapp"></i></a> 
+      <a href="https://instagram.com/akh4re?utm_medium=copy_link"><i class="icon ion-social-instagram"></i></a> 
+     </div> 
+    </div> 
+       <pre>
+   </pre>
+   </footer>
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+<!--footer script-->  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstravp.bundle.min.js"></script>
+  </body>
+</html>
